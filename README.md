@@ -17,3 +17,8 @@ AWS: Leveraging scalable and secure cloud services.
 💡 Why this matters:
 EKS simplifies Kubernetes management, but setting up the networking stack is crucial.
 This repository showcases how to use Terraform for robust and automated cloud setups, a vital skill in modern DevOps practices.
+
+To Connect EKS cluster  
+```
+aws eks update-kubeconfig --region us-east-2 --name staging-demo
+```
