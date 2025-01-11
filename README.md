@@ -22,3 +22,13 @@ To Connect EKS cluster
 ```
 aws eks update-kubeconfig --region us-east-2 --name staging-demo
 ```
+
+```
+aws sts get-caller-identity --profile developer
+aws eks update-kubeconfig --region us-east-2 --name staging-demo --profile developer
+kubectl config view --minify
+kubectl auth can-i get pods
+kubectl auth can-i "*" "*"
+```
+Check   "kubectl get nodes" ==> Cannot Access
+        "kubectl get pods"  ==> Can Access
